@@ -19,6 +19,7 @@
 			{
 				Console.Write($"{item}, ");
 			}
-		}
+            Console.WriteLine();
+        }
 	}
 }
