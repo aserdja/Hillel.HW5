@@ -10,8 +10,7 @@ namespace HW5
 
 		Func<double, bool> addPositiveNumber = (x) =>
 		{
-			if (x > 0) return true;
-			else return false;
+			return x > 0;
 		};
 
 		public void AddMeasurment(double newValue)
