@@ -12,15 +12,16 @@
 			return result / array.Length;
 		}
 
-		public static double Average(this double?[] array)
+		public static double Average(this IEnumerable<double?> array)
 		{
 			double result = 0;
 			int counter = 0;
-			for (int i = 0; i < array.Length; i++)
+
+			foreach (var item in array)
 			{
-				if (array[i] != null)
+				if (item != null)
 				{
-					result += Convert.ToDouble(array[i]);
+					result += Convert.ToDouble(item);
 					counter++;
 				}
 			}
